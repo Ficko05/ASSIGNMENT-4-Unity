@@ -6,12 +6,8 @@ using UnityEngine.AI;
 public class autoBaker : MonoBehaviour
 {
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public NavMeshSurface surface;
+    
     void Update()
     {
         
