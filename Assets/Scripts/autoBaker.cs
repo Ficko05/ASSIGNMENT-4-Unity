@@ -6,8 +6,16 @@ using UnityEngine.AI;
 public class autoBaker : MonoBehaviour
 {
 
-    public NavMeshSurface surface;
-    
+    public NavMeshSurface[] surface;
+
+    void Start()
+    {
+        for (int i = 0; i < surface.Length ; i++)
+        {
+            surface[i].BuildNavMesh ();
+        }
+    }
+
     void Update()
     {
         

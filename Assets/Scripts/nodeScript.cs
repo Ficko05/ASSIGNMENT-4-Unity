@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class nodeScript : MonoBehaviour
 {
@@ -20,10 +21,15 @@ public class nodeScript : MonoBehaviour
         startColor = rend.material.color;
 
     }
+    public NavMeshSurface[] surface;
 
     void OnMouseDown()
     {
-        if(turret != null)
+        for (int i = 0; i < surface.Length; i++)
+        {
+            surface[i].BuildNavMesh();
+        }
+        if (turret != null)
         {
             Debug.Log("cant build there");
             //TODO display on screen
@@ -31,7 +37,7 @@ public class nodeScript : MonoBehaviour
 
         GameObject turretToBuild = buildManeger.instance.GetTurretToBuild();
         turret = (GameObject)Instantiate(turretToBuild, transform.position + offset, transform.rotation);
-
+        
     }
 
     void OnMouseEnter()
