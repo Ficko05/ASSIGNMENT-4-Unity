@@ -7,17 +7,20 @@ public class autoBaker : MonoBehaviour
 {
 
     public NavMeshSurface[] surface;
-
     void Start()
     {
-        for (int i = 0; i < surface.Length ; i++)
+        bakeRuntime();
+    }
+
+   
+
+    public void bakeRuntime()
+    {
+        for (int i = 0; i < surface.Length; i++)
         {
-            surface[i].BuildNavMesh ();
+            surface[i].BuildNavMesh();
         }
     }
 
-    void Update()
-    {
-        
-    }
+
 }
