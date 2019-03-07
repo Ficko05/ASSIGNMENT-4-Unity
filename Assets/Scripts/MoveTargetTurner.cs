@@ -7,13 +7,13 @@ public class MoveTargetTurner : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    public GameObject goalDistance ;
+    //public GameObject goalDistance ;
 
 
     private void Start()
     {
 
-        Vector3 target = goalDistance.gameObject.transform.position;
+        Vector3 target = GameObject.Find("endZoneWall").transform.position;
         agent.SetDestination(target);
 
     }

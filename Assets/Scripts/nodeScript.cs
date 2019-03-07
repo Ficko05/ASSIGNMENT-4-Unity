@@ -43,7 +43,7 @@ public class nodeScript : MonoBehaviour
     void OnMouseEnter()
     {
         rend.material.color = hoverColor;
-        print("im in here");
+        //print("im in here");
     }
 
     void OnMouseExit()
