@@ -35,7 +35,6 @@ public class hitSphere : MonoBehaviour
         if (cooldown == true)
         {
             cooldownTimer = cooldownTimer - Time.deltaTime;
-            print(cooldownTimer);
             if (cooldownTimer <= 0)
             {
                 cooldown = false;
