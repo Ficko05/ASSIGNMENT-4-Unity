@@ -27,6 +27,7 @@ public class nodeScript : MonoBehaviour
     }
    
 
+
     void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject())
