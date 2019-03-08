@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9122667610401074872}
   - component: {fileID: 9122667610401074871}
   - component: {fileID: 9122667610401074870}
+  - component: {fileID: 2492871192083144362}
   m_Layer: 10
   m_Name: agentTurner
   m_TagString: mob
@@ -145,3 +146,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 9122667610401074872}
+--- !u!114 &2492871192083144362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122667610401074869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c6255a79dd01e44ad8e34147ad919c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
