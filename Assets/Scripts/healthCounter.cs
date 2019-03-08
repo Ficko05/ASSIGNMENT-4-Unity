@@ -8,10 +8,17 @@ public class healthCounter : MonoBehaviour
     public int count;
     public Text countText;
 
-    void Start()
+    public static healthCounter instance;
+
+    void Awake()
     {
+        instance = this;
         count = 20;
         setCountText();
+        if(count == 0)
+        {
+
+        }
     }
     public void setCount()
     {
