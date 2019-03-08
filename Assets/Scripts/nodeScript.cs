@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class nodeScript : MonoBehaviour
 {
@@ -9,26 +10,34 @@ public class nodeScript : MonoBehaviour
 
     private GameObject turret;
     public Vector3 offset;
-    
 
     private Renderer rend;
 
     private Color startColor;
+
+    buildManeger buildManeger;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
 
+        buildManeger = buildManeger.instance;
+
     }
-    public NavMeshSurface[] surface;
+   
 
     void OnMouseDown()
     {
-        for (int i = 0; i < surface.Length; i++)
+        if (EventSystem.current.IsPointerOverGameObject())
         {
-            surface[i].BuildNavMesh();
+            return;
         }
+        if (buildManeger.GetTurretToBuild() == null)
+        {
+            return;
+        }
+        
         if (turret != null)
         {
             Debug.Log("cant build there");
@@ -37,11 +46,21 @@ public class nodeScript : MonoBehaviour
 
         GameObject turretToBuild = buildManeger.instance.GetTurretToBuild();
         turret = (GameObject)Instantiate(turretToBuild, transform.position + offset, transform.rotation);
+
         
+
     }
 
     void OnMouseEnter()
     {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+        if (buildManeger.GetTurretToBuild() == null)
+            return;
+
         rend.material.color = hoverColor;
         //print("im in here");
     }

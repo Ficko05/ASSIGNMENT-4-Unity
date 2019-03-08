@@ -160,7 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &42082814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -267,7 +266,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &52357448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -448,6 +446,156 @@ Transform:
   m_Father: {fileID: 588382433}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &67731426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67731427}
+  - component: {fileID: 67731430}
+  - component: {fileID: 67731429}
+  - component: {fileID: 67731428}
+  - component: {fileID: 67731431}
+  m_Layer: 5
+  m_Name: standartTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &67731427
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 942163836}
+  m_Father: {fileID: 1420742628}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 113.5, y: -200.64998}
+  m_SizeDelta: {x: 227, y: 95.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &67731428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 67731429}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1420742632}
+        m_MethodName: standertTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &67731429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &67731430
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731426}
+  m_CullTransparentMesh: 0
+--- !u!114 &67731431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 200
+  m_PreferredHeight: 100
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &70852399
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +644,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &70852402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -603,7 +750,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &97983461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -710,7 +856,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &99584382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -847,6 +992,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148723392}
+  m_CullTransparentMesh: 0
+--- !u!1 &149113143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 149113144}
+  - component: {fileID: 149113146}
+  - component: {fileID: 149113145}
+  m_Layer: 5
+  m_Name: gold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &149113144
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149113143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 773344665}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -323, y: -245.6}
+  m_SizeDelta: {x: 160, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &149113145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149113143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.99765027, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Gold :'
+--- !u!222 &149113146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149113143}
   m_CullTransparentMesh: 0
 --- !u!1 &150416341
 GameObject:
@@ -1031,7 +1255,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &150728102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1138,7 +1361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &163417207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1393,7 +1615,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &206030070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1500,7 +1721,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &224658640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1607,7 +1827,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &234260100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1714,7 +1933,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &266721607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1821,7 +2039,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &276646092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1928,7 +2145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &296915533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2035,7 +2251,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &307878308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2142,7 +2357,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &355971099
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2249,7 +2463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &366401406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2356,7 +2569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &376053756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2463,7 +2675,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &384694232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2570,7 +2781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0.5, z: 0}
-  surface: []
 --- !u!65 &392573478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2677,7 +2887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &401975498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2784,7 +2993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &403927751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2891,7 +3099,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &404790621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2998,7 +3205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &407574799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3057,6 +3263,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407574796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &423475647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423475648}
+  - component: {fileID: 423475650}
+  - component: {fileID: 423475649}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &423475648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423475647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 832036189}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &423475649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423475647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fire Turret
+--- !u!222 &423475650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423475647}
+  m_CullTransparentMesh: 0
 --- !u!1 &439196354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,7 +3390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &439196357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3212,7 +3496,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &440178671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3319,7 +3602,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &440388526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3426,7 +3708,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &482600610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3533,7 +3814,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &485451260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3640,7 +3920,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &491412043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3747,7 +4026,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &506721458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4021,7 +4299,6 @@ GameObject:
   - component: {fileID: 567577354}
   - component: {fileID: 567577353}
   - component: {fileID: 567577352}
-  - component: {fileID: 567577355}
   m_Layer: 5
   m_Name: spawn turret
   m_TagString: Untagged
@@ -4088,18 +4365,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567577353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 567577355}
-        m_MethodName: TaskOnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &567577353
@@ -4139,19 +4405,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567577350}
   m_CullTransparentMesh: 0
---- !u!114 &567577355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567577350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e26ab9c2e44e164087a5bca8ac51f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretPrefab: {fileID: 739820710}
 --- !u!1 &573339255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,7 +4453,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &573339258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4307,7 +4559,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &576156870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4484,7 +4735,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &597358032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4577,8 +4827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 62.33, y: 224}
+  m_AnchoredPosition: {x: -500, y: -67}
+  m_SizeDelta: {x: 160, y: 38.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600690464
 MonoBehaviour:
@@ -4607,7 +4857,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4670,7 +4920,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &626186551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4777,7 +5026,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &639161505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5005,7 +5253,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &716614379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5112,7 +5359,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &727289864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5219,7 +5465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &736333026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5326,7 +5571,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &737564371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5385,12 +5629,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737564368}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &739820710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8461713660414482827, guid: 8795ba3e719974b4c80979b1dd59fe2d,
-    type: 3}
-  m_PrefabInstance: {fileID: 8461713659809996077}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &739820714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8461713660414482823, guid: 8795ba3e719974b4c80979b1dd59fe2d,
@@ -5425,6 +5663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 739820714}
+  - {fileID: 5027194326523298751}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5440,6 +5679,7 @@ GameObject:
   - component: {fileID: 773344664}
   - component: {fileID: 773344663}
   - component: {fileID: 773344662}
+  - component: {fileID: 773344666}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5498,7 +5738,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -5522,6 +5762,8 @@ RectTransform:
   - {fileID: 567577351}
   - {fileID: 2084991771}
   - {fileID: 600690463}
+  - {fileID: 149113144}
+  - {fileID: 1420742628}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5530,6 +5772,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &773344666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773344661}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17997e6300f37ec4aa21ce47642ede79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784250815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,7 +5832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &784250818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5685,7 +5938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &816303182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5744,6 +5996,145 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816303179}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &832036188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832036189}
+  - component: {fileID: 832036192}
+  - component: {fileID: 832036191}
+  - component: {fileID: 832036190}
+  - component: {fileID: 832036193}
+  m_Layer: 5
+  m_Name: FireTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &832036189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832036188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 423475648}
+  m_Father: {fileID: 1420742628}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 113.5, y: -296.55}
+  m_SizeDelta: {x: 227, y: 95.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &832036190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832036188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 832036191}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &832036191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832036188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &832036192
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832036188}
+  m_CullTransparentMesh: 0
+--- !u!114 &832036193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832036188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 200
+  m_PreferredHeight: 100
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &839839522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +6183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &839839525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5899,7 +6289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &912622265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6006,7 +6395,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &916713731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6113,7 +6501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &919606368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6293,6 +6680,85 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 87b5b403513271349ac680e59cb9fc7d, type: 2}
+--- !u!1 &942163835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942163836}
+  - component: {fileID: 942163838}
+  - component: {fileID: 942163837}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &942163836
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942163835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 67731427}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &942163837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942163835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: standert Turret
+--- !u!222 &942163838
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942163835}
+  m_CullTransparentMesh: 0
 --- !u!1 &944847530
 GameObject:
   m_ObjectHideFlags: 0
@@ -6462,7 +6928,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &949363689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6569,7 +7034,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &949581768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6676,7 +7140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &973177895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6783,7 +7246,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &979827133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6890,7 +7352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &996252952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6997,7 +7458,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &996298282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7104,7 +7564,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &997906105
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7211,7 +7670,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &999613128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7318,7 +7776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1058613227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7425,7 +7882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1059548777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7532,7 +7988,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1081632459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7639,7 +8094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1093840720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7746,7 +8200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1101898833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7919,7 +8372,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1107355887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8026,7 +8478,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1120862159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8097,6 +8548,7 @@ GameObject:
   - component: {fileID: 1158998168}
   - component: {fileID: 1158998170}
   - component: {fileID: 1158998171}
+  - component: {fileID: 1158998172}
   m_Layer: 0
   m_Name: GameManeger
   m_TagString: Untagged
@@ -8116,7 +8568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d362e607f31d8479013c1fcb6487d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretprefab: {fileID: 8461713660414482827, guid: 8795ba3e719974b4c80979b1dd59fe2d,
+  standertTurretprefab: {fileID: 8461713660414482827, guid: 8795ba3e719974b4c80979b1dd59fe2d,
+    type: 3}
+  fireTurretprefab: {fileID: 3005160561824924062, guid: 564a3879fed8b3343907663b5d67232b,
     type: 3}
 --- !u!4 &1158998169
 Transform:
@@ -8170,8 +8624,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cb17767da5543468c25da0d25ec40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 0
+  count: 100
   countText: {fileID: 600690464}
+--- !u!114 &1158998172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158998167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4337b43f05b1e1f4bbcd76e8682e311f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 100
+  goldText: {fileID: 149113145}
 --- !u!1 &1167081105
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,7 +8688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1167081108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8327,7 +8794,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1177414203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8434,7 +8900,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1183528569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8541,7 +9006,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1222089630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8648,7 +9112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1231158100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8895,7 +9358,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1240751819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9002,7 +9464,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1246927860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9386,7 +9847,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1303837722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10077,7 +10537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1407712006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10184,7 +10643,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1409874210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10291,7 +10749,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1412500442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10350,6 +10807,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412500439}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1420742627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420742628}
+  - component: {fileID: 1420742630}
+  - component: {fileID: 1420742629}
+  - component: {fileID: 1420742631}
+  - component: {fileID: 1420742632}
+  m_Layer: 5
+  m_Name: shopStore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1420742628
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420742627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 67731427}
+  - {fileID: 832036189}
+  - {fileID: 1643649874}
+  m_Father: {fileID: 773344665}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -113.5, y: 2}
+  m_SizeDelta: {x: 227, y: 593.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1420742629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420742627}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1420742630
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420742627}
+  m_CullTransparentMesh: 0
+--- !u!114 &1420742631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420742627}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+--- !u!114 &1420742632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420742627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17997e6300f37ec4aa21ce47642ede79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424834300
 GameObject:
   m_ObjectHideFlags: 0
@@ -10398,7 +10969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1424834303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10505,7 +11075,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1463356115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10612,7 +11181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1465034262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10719,7 +11287,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1485178071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10826,7 +11393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1496705488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10933,7 +11499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1517085503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11040,7 +11605,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1536591873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11147,7 +11711,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1544941812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11254,7 +11817,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1550287767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11361,7 +11923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1566019867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11468,7 +12029,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1586668724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11648,6 +12208,145 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 123a4e67ca3be7e46bd22459fb2d549a, type: 2}
+--- !u!1 &1643649873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643649874}
+  - component: {fileID: 1643649877}
+  - component: {fileID: 1643649876}
+  - component: {fileID: 1643649875}
+  - component: {fileID: 1643649878}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1643649874
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643649873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1699920289}
+  m_Father: {fileID: 1420742628}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 113.5, y: -392.44998}
+  m_SizeDelta: {x: 227, y: 95.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1643649875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643649873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1643649876}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1643649876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643649873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1643649877
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643649873}
+  m_CullTransparentMesh: 0
+--- !u!114 &1643649878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643649873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 200
+  m_PreferredHeight: 100
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &1650418297
 GameObject:
   m_ObjectHideFlags: 0
@@ -11696,7 +12395,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1650418300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11803,7 +12501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1654257317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11910,7 +12607,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1654624047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12017,7 +12713,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1659065594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12124,7 +12819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1669428542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12353,7 +13047,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1681296020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12412,6 +13105,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681296017}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1699920288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699920289}
+  - component: {fileID: 1699920291}
+  - component: {fileID: 1699920290}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1699920289
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699920288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1643649874}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1699920290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699920288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &1699920291
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699920288}
+  m_CullTransparentMesh: 0
 --- !u!1 &1744740576
 GameObject:
   m_ObjectHideFlags: 0
@@ -12460,7 +13232,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1744740579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12567,7 +13338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1745520453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12674,7 +13444,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1772443625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12781,7 +13550,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1782836929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12888,7 +13656,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1796921837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12995,7 +13762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1812621879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13102,7 +13868,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1875998822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13209,7 +13974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1877769174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13316,7 +14080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1899936088
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13423,7 +14186,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1925860835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13530,7 +14292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1938332522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13637,7 +14398,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1944162953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13744,7 +14504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &1973799603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13851,7 +14610,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2002427980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13958,7 +14716,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2003915909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14065,7 +14822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2008676703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14172,7 +14928,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2036971523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14279,7 +15034,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2041309762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14386,7 +15140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2062895433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14493,7 +15246,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2083704783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14570,7 +15322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2084991771
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14630,7 +15382,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2084991773}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 773344666}
+        m_MethodName: standertTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2084991773
@@ -14718,7 +15481,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2098766898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14825,7 +15587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2101462732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14932,7 +15693,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2113744419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15039,7 +15799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
   offset: {x: 0, y: 0, z: 0}
-  surface: []
 --- !u!65 &2127216844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15172,6 +15931,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f02c3fc83766e61409d4efa11eef593a, type: 3}
+--- !u!1001 &2450091784529085903
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 769116347}
+    m_Modifications:
+    - target: {fileID: 3005160561824924062, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_Name
+      value: fireTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 564a3879fed8b3343907663b5d67232b, type: 3}
+--- !u!4 &5027194326523298751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5027194326523298751, guid: 564a3879fed8b3343907663b5d67232b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2450091784529085903}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8461713659809996077
 PrefabInstance:
   m_ObjectHideFlags: 0
